@@ -8,6 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="splashtext">#D5A510</color>
-    <color name="BackgroundVIC">#595959</color>
-    <color name="BackgroundSplashVIC">#595959</color>
+    <color name="BackgroundVIC">#6B6B6B</color>
+    <color name="BackgroundSplashVIC">#6B6B6B</color>
 </resources>

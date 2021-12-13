@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AmbystoVicAPP</string>
     <string name="VIC">VIC</string>
+    <string name="DEV">By Martin and FX</string>
 </resources>
