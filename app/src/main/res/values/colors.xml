@@ -10,4 +10,7 @@
     <color name="splashtext">#D5A510</color>
     <color name="BackgroundVIC">#6B6B6B</color>
     <color name="BackgroundSplashVIC">#6B6B6B</color>
+    <color name="VICtext">#84B6DD</color>
+    <color name="NO_Title">#6B6B6B</color>
+
 </resources>
