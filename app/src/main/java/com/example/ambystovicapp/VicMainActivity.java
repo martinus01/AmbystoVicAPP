@@ -12,6 +12,7 @@ public class VicMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Bonjour, je suis FX
-        //salutf
+        //salutff
+
     }
 }
