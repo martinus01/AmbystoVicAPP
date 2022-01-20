@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 public class VicMainActivity extends AppCompatActivity {
 
     private ImageButton bouton;
+    private Button boutonenvoi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,16 @@ public class VicMainActivity extends AppCompatActivity {
                     Intent intent= new Intent(getApplicationContext(), Activity_test.class);
                     startActivity(intent);
                     finish();
+            }
+        });
+
+        boutonenvoi = (Button) findViewById(R.id.buttonenvoi);
+        boutonenvoi.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent= new Intent(getApplicationContext(), PageEnvoiduMessage.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
