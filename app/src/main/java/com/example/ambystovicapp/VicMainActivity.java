@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 public class VicMainActivity extends AppCompatActivity {
 
     private ImageButton bouton;
-    private Button boutonenvoi;
+    private ImageButton boutonDevice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,14 +28,17 @@ public class VicMainActivity extends AppCompatActivity {
             }
         });
 
-        boutonenvoi = (Button) findViewById(R.id.buttonenvoi);
-        boutonenvoi.setOnClickListener(new View.OnClickListener(){
+        boutonDevice = (ImageButton) findViewById(R.id.Button_device);
+        boutonDevice.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent= new Intent(getApplicationContext(), PageEnvoiduMessage.class);
+                Intent intent= new Intent(getApplicationContext(), Activity_Device_Selection.class);
                 startActivity(intent);
                 finish();
             }
         });
+
+
+
     }
 }

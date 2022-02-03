@@ -27,6 +27,8 @@ import java.util.logging.Handler;
 
 public class PageEnvoiduMessage extends AppCompatActivity {
 
+//TODO c'est casser
+
     private static final UUID MY_UUID_INSECURE =
             UUID.fromString("8ce255c0-200a-11e0-ac64-0800200c9a66");
 
@@ -42,6 +44,35 @@ public class PageEnvoiduMessage extends AppCompatActivity {
     EditText send_data;
     TextView view_data;
     StringBuilder messages;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        send_data = (EditText) findViewById(R.id.editText);
+        view_data = (TextView) findViewById(R.id.textView);
+
+        if (bluetoothAdapter != null && !bluetoothAdapter.isEnabled()) {
+            Intent enableBtIntent = new
+                    Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+            startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+        }
+
+        boutonexit = (Button) findViewById(R.id.buttonexit);
+        boutonexit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent= new Intent(getApplicationContext(), VicMainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+    }
+
+
 
 
     public void pairDevice(View v) {
@@ -205,7 +236,7 @@ public class PageEnvoiduMessage extends AppCompatActivity {
         mConnectedThread.write(bytes);
     }
 
-
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -232,7 +263,7 @@ public class PageEnvoiduMessage extends AppCompatActivity {
         });
 
     }
-
+*/
     public void Start_Server(View view) {
 
         AcceptThread accept = new AcceptThread();
