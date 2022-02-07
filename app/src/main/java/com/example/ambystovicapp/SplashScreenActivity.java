@@ -11,7 +11,7 @@ import android.view.WindowManager;
 public class SplashScreenActivity extends AppCompatActivity {
 
 
-    private final int SPLASH_SCREEN_DELAY = 10000;
+    private final int SPLASH_SCREEN_DELAY = 5000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

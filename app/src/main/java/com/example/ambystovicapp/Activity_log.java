@@ -9,7 +9,11 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Activity_log  extends AppCompatActivity {
+
+
     private ImageButton boutonDevice;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

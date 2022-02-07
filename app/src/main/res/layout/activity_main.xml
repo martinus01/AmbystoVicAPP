@@ -12,14 +12,16 @@
         android:id="@+id/imageView"
         android:layout_width="330dp"
         android:layout_height="378dp"
-        android:layout_marginBottom="432dp"
+        android:layout_marginBottom="440dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/musicplay2" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/ButonTest"
         android:layout_width="104dp"
         android:layout_height="114dp"
@@ -51,20 +53,20 @@
         app:srcCompat="@drawable/bonhomme2" />
 
     <ImageButton
-        android:id="@+id/Button_Jacket"
+        android:id="@+id/Button_device"
         android:layout_width="167dp"
         android:layout_height="78dp"
         android:layout_marginBottom="32dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/Button_device"
+        app:layout_constraintBottom_toTopOf="@+id/Button_Jacket"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/Button_device"
-        app:srcCompat="@drawable/jacket"
+        app:layout_constraintStart_toStartOf="@+id/Button_Jacket"
+        app:srcCompat="@drawable/device"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/Button_device"
+        android:id="@+id/Button_Jacket"
         android:layout_width="163dp"
         android:layout_height="59dp"
         android:layout_marginStart="59dp"
@@ -76,13 +78,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.813"
         app:layout_constraintStart_toEndOf="@+id/bonhomme"
-        app:srcCompat="@drawable/device"
+        app:srcCompat="@drawable/jacket"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/Button_roue"
-        android:layout_width="50dp"
-        android:layout_height="47dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="56dp"
@@ -90,13 +92,12 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toEndOf="@+id/bonhomme"
-        app:layout_constraintTop_toBottomOf="@+id/Button_device"
-        app:layout_constraintVertical_bias="0.298"
+        app:layout_constraintTop_toBottomOf="@+id/Button_Jacket"
+        app:layout_constraintVertical_bias="0.308"
         app:srcCompat="@drawable/roue_para"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

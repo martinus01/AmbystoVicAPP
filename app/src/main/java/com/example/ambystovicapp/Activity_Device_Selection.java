@@ -31,6 +31,16 @@ public class Activity_Device_Selection extends AppCompatActivity {
             }
         });
 
+        bouton1 = (ImageButton) findViewById(R.id.button_carte_casque);
+        bouton1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent= new Intent(getApplicationContext(), construction_activity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         bouton = (ImageButton) findViewById(R.id.button_carte_casque);
         bouton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -41,8 +51,45 @@ public class Activity_Device_Selection extends AppCompatActivity {
             }
         });
 
+        bouton2 = (ImageButton) findViewById(R.id.button_carte_co);
+        bouton2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent= new Intent(getApplicationContext(), construction_activity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
+        bouton3 = (ImageButton) findViewById(R.id.button_carte_lunnette);
+        bouton3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent= new Intent(getApplicationContext(), construction_activity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
+        bouton4 = (ImageButton) findViewById(R.id.button_carte_gants);
+        bouton4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent= new Intent(getApplicationContext(), construction_activity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        bouton5 = (ImageButton) findViewById(R.id.button_carte_rfid);
+        bouton5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent= new Intent(getApplicationContext(), construction_activity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 
