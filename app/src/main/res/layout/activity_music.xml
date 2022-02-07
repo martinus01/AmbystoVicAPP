@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/BackgroundVIC">
+    android:background="@drawable/background">
 
 
     <Switch
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
-        app:srcCompat="@drawable/Bluetooth" />
+        app:srcCompat="@drawable/bluetooth" />
 
     <ImageView
         android:id="@+id/Led"
@@ -42,7 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.226"
-        app:srcCompat="@drawable/Led" />
+        app:srcCompat="@drawable/led" />
 
     <ImageView
         android:id="@+id/batterie"
@@ -54,7 +54,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.886"
-        app:srcCompat="@drawable/Batterie" />
+        app:srcCompat="@drawable/batterie" />
 
     <ImageView
         android:id="@+id/son"
@@ -66,7 +66,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.47"
-        app:srcCompat="@drawable/Son" />
+        app:srcCompat="@drawable/son" />
 
     <ImageView
         android:id="@+id/ecouteur"
@@ -78,7 +78,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/Ecouteur" />
+        app:srcCompat="@drawable/ecouteur" />
 
     <ImageView
         android:id="@+id/backmusic"
@@ -90,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.698"
-        app:srcCompat="@drawable/BackMusic" />
+        app:srcCompat="@drawable/backmusic" />
 
     <ImageView
         android:id="@+id/playmusic"
@@ -102,7 +102,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.698"
-        app:srcCompat="@drawable/PlayMusic" />
+        app:srcCompat="@drawable/playmusic" />
 
     <ImageView
         android:id="@+id/nextmusic"
@@ -114,7 +114,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.698"
-        app:srcCompat="@drawable/NextMusic" />
+        app:srcCompat="@drawable/nextmusic" />
 
     <ImageView
         android:id="@+id/texttitle"
@@ -126,7 +126,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/Texttitle" />
+        app:srcCompat="@drawable/texttitle" />
 
     <ImageView
         android:id="@+id/textplug"
@@ -138,7 +138,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.225"
-        app:srcCompat="@drawable/TextPlug" />
+        app:srcCompat="@drawable/textplug" />
 
     <ImageView
         android:id="@+id/textbattery"
@@ -150,7 +150,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.926"
-        app:srcCompat="@drawable/TextBattery" />
+        app:srcCompat="@drawable/textbattery" />
 
     <ImageView
         android:id="@+id/textartist"
@@ -161,7 +161,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/TextArtist" />
+        app:srcCompat="@drawable/textartist" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

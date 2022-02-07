@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/BackgroundVIC">
+    android:background="@drawable/background">
 
     <ImageView
         android:id="@+id/bluetooth"
@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/Viclog" />
+        app:srcCompat="@drawable/viclog" />
 
     <ImageView
         android:id="@+id/byambysto"
@@ -27,9 +27,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.287"
-        app:srcCompat="@drawable/byAmbysto" />
+        app:srcCompat="@drawable/by_ambysto" />
 
     <ImageButton
+        android:id="@+id/signin"
         android:layout_width="226dp"
         android:layout_height="78dp"
         android:background="@android:color/transparent"
@@ -40,14 +41,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.822"
-        app:srcCompat="@drawable/Signin"
+        app:srcCompat="@drawable/signin"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="361dp"
         android:layout_height="44dp"
-        android:background="@drawable/Zonedetexte"
+        android:background="@drawable/zonedetexte"
         android:text="  Password..."
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,7 +62,7 @@
         android:id="@+id/editText3"
         android:layout_width="361dp"
         android:layout_height="44dp"
-        android:background="@drawable/Zonedetexte"
+        android:background="@drawable/zonedetexte"
         android:text="  Username..."
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"

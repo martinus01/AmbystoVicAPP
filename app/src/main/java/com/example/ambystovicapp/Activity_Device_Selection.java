@@ -25,13 +25,21 @@ public class Activity_Device_Selection extends AppCompatActivity {
         bouton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent= new Intent(getApplicationContext(), construction_activity.class);
+                Intent intent= new Intent(getApplicationContext(), Activity_music.class);
                 startActivity(intent);
                 finish();
             }
         });
 
-
+        bouton = (ImageButton) findViewById(R.id.button_carte_casque);
+        bouton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent= new Intent(getApplicationContext(), construction_activity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
 
 

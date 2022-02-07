@@ -24,6 +24,12 @@
             android:name=".Activity_device_parametre"
             android:exported="false" />
         <activity
+            android:name=".Activity_log"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_music"
+            android:exported="false" />
+        <activity
             android:name=".Activity_Device_Selection"
             android:exported="false" />
         <activity
