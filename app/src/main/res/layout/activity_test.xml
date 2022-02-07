@@ -7,6 +7,7 @@
     android:background="@color/BackgroundVIC"
     tools:context=".Activity_test">
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="111dp"
@@ -17,7 +18,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="305dp"
+        android:layout_height="371dp"
+        android:text="L’Axolotl, Ambystoma mexicanum, est une espèce de salamandre néoténique faisant partie de l'ordre des urodèles et de la famille des Ambystomatidae. Il fait partie des animaux ayant la capacité de passer toute leur vie à l'état larvaire sans jamais se métamorphoser en adulte, et donc de se reproduire à l'état larvaire. \ "
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
 
     <ImageButton
         android:id="@+id/RetourMain"

@@ -13,8 +13,9 @@ import android.widget.ImageButton;
 
 public class VicMainActivity extends AppCompatActivity {
 
-    private ImageButton bouton;
+    private ImageButton boutonDevice;
     private int i=0;
+    private ImageButton bouton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +37,19 @@ public class VicMainActivity extends AppCompatActivity {
                     finish();
             }
         });
+
+        boutonDevice = (ImageButton) findViewById(R.id.Button_device);
+        boutonDevice.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent= new Intent(getApplicationContext(), Activity_Device_Selection.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
+
 
 
 

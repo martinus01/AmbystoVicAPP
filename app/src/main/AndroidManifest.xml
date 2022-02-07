@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.ambystovicapp">
 
+    <uses-permission
+        android:name="android.permission.LOCAL_MAC_ADDRESS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,6 +17,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AmbystoVicAPP">
+        <activity
+            android:name=".Activity_device_parametre"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Device_Selection"
+            android:exported="false" />
+        <activity
+            android:name=".PageEnvoiduMessage"
+            android:exported="false" />
         <activity
             android:name=".Activity_test"
             android:exported="false" />
