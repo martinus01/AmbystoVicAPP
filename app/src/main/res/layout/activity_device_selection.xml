@@ -4,71 +4,212 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".Activity_Device_Selection">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/embedded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Embedded system Embedded system "
+        app:layout_constraintBottom_toTopOf="@+id/button_carte_apple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_apple"
+        app:layout_constraintTop_toBottomOf="@+id/image_device_title" />
+
+    <TextView
+        android:id="@+id/integrated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Integrated device "
+        app:layout_constraintBottom_toTopOf="@+id/button_carte_gants"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_gants"
+        app:layout_constraintTop_toBottomOf="@+id/button_carte_co"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/image_device_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="111dp"
         android:layout_marginBottom="617dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/devicetitle" />
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <ImageButton
+        android:id="@+id/image_plus_device"
         android:layout_width="124dp"
         android:layout_height="122dp"
         android:layout_marginStart="280dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="590dp"
+        android:background="@android:color/transparent"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/plus_device" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="24dp"
+    <ImageButton
+        android:id="@+id/button_carte_apple"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_carte_casque"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        android:background="@android:color/transparent"
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ecouteur Apple" />
-    </FrameLayout>
+        app:layout_constraintTop_toTopOf="@+id/button_carte_casque"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/carte_apple_2" />
 
-    <FrameLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="16dp"
+    <ImageButton
+        android:id="@+id/button_carte_casque"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/image_device_title"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/carte_casque_2" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lunette connectée" />
-    </FrameLayout>
+    <ImageButton
+        android:id="@+id/button_carte_co"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/button_carte_lunnette"
+        app:layout_constraintEnd_toEndOf="@+id/button_carte_apple"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_apple"
+        app:layout_constraintTop_toBottomOf="@+id/button_carte_apple"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/carte_montre_co_2" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="55dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="128dp"></LinearLayout>
+    <ImageButton
+        android:id="@+id/button_carte_lunnette"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_carte_rfid"
+        app:layout_constraintEnd_toEndOf="@+id/button_carte_casque"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_casque"
+        app:layout_constraintTop_toBottomOf="@+id/button_carte_casque"
+        app:layout_constraintVertical_bias="0.0"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/carte_lunette_co_2" />
+
+    <ImageButton
+        android:id="@+id/button_carte_rfid"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_lunnette"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/carte_module_rfid_2" />
+
+    <ImageButton
+        android:id="@+id/button_carte_gants"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_carte_rfid"
+        app:layout_constraintEnd_toEndOf="@+id/button_carte_co"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_co"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@+id/button_carte_rfid"
+        app:layout_constraintVertical_bias="0.0"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/carte_gants_co_2" />
+
+    <Switch
+        android:id="@+id/switch_apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/button_carte_apple"
+        app:layout_constraintEnd_toEndOf="@+id/button_carte_apple"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_apple"
+        app:layout_constraintTop_toTopOf="@+id/button_carte_apple"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Switch
+        android:id="@+id/switch_casque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/button_carte_casque"
+        app:layout_constraintEnd_toEndOf="@+id/button_carte_casque"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_casque"
+        app:layout_constraintTop_toTopOf="@+id/button_carte_casque"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Switch
+        android:id="@+id/switch_watch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/button_carte_co"
+        app:layout_constraintEnd_toEndOf="@+id/button_carte_co"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_co"
+        app:layout_constraintTop_toTopOf="@+id/button_carte_co"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Switch
+        android:id="@+id/switch_lunnette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/button_carte_lunnette"
+        app:layout_constraintEnd_toEndOf="@+id/button_carte_lunnette"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_lunnette"
+        app:layout_constraintTop_toTopOf="@+id/button_carte_lunnette"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Switch
+        android:id="@+id/switch_gants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/button_carte_gants"
+        app:layout_constraintEnd_toEndOf="@+id/button_carte_gants"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_gants"
+        app:layout_constraintTop_toTopOf="@+id/button_carte_gants"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Switch
+        android:id="@+id/switch_rfid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/button_carte_rfid"
+        app:layout_constraintEnd_toEndOf="@+id/button_carte_rfid"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="@+id/button_carte_rfid"
+        app:layout_constraintTop_toTopOf="@+id/button_carte_rfid"
+        app:layout_constraintVertical_bias="0.74" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

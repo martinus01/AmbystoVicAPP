@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AmbystoVicAPP">
         <activity
+            android:name=".construction_activity"
+            android:exported="false" />
+        <activity
             android:name=".Activity_device_parametre"
             android:exported="false" />
         <activity
