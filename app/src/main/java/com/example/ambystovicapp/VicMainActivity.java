@@ -18,6 +18,7 @@ public class VicMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         bouton = (ImageButton) findViewById(R.id.ButonTest);
         bouton.setOnClickListener(new View.OnClickListener(){
             @Override
